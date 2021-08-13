@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: ApproachResponse2
+  m_EditorClassIdentifier: 
+  dialog:
+  - 'Gallus E. (Beer Pong Host): Pfftttt you''re drunk! This wallet is the prize
+    of this beer pong match. Gotta play to win it buddy!'
+  - You feel drained because of you realize you can't avoid the Beer Pong match.
+  responses:
+  - responseText: 'A) Laquan: I guess I can try.'
+    dialogObject: {fileID: 11400000, guid: eb8df3c915c5f9a4f91ff380c267da07, type: 2}
+  - responseText: 'B) Laquan: Jackass I''m not messing around!'
+    dialogObject: {fileID: 11400000, guid: 9e646a0c27281ba408df28ef43ea5119, type: 2}

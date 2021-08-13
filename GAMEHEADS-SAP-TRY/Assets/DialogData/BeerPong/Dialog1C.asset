@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: Dialog1C
+  m_EditorClassIdentifier: 
+  dialog:
+  - 'LAQUAN: Erm...I notice that you have on my dead father''s wallet. (Outlier Option)
+    --5 PTs'
+  - 'GALLUS E. : Oh man. Sorry about that my guy. Here.'
+  - 'WALLET RETRIEVED. CONTINUE TO THE NEXT EVENT
+
+    GUILT ARISES -10 PTs
+
+    ANXIETY
+    INCREASES -10 PTs'
+  - Lets go! I got my wallet back! However, I don't know how I feel about the way
+    I went about to get it though. Cmon! I'm above lying. This is probably why I
+    feel really really drained...On to the next item I guess?
+  responses:
+  - responseText: NEXT
+    dialogObject: {fileID: 0}

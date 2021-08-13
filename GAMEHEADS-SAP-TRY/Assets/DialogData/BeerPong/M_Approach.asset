@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: M_Approach
+  m_EditorClassIdentifier: 
+  dialog:
+  - Laquan nerviously approaches the Beer Pong Table
+  - 'Gallus E (Beer Pong Host): Hey bro, like what you see? Why don''t you stop lingering
+    around and try to get in on this match huh?'
+  responses:
+  - responseText: 'A) Laquan: I don''t want any trouble. Just want the wallet.'
+    dialogObject: {fileID: 11400000, guid: 8a5adaef8d50108458e959db27355f96, type: 2}
+  - responseText: 'B) Laquan: How about giving me back my wallet?'
+    dialogObject: {fileID: 11400000, guid: c7accdffd8d1e4e4487eb5b173ed8fa1, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: 3Response1B
+  m_EditorClassIdentifier: 
+  dialog:
+  - '*Laquan throws a punch and misses. Gallus socks Laquan in the eye*'
+  - You definitely feel drained because of how the encounter turned out.
+  - '*Laquan is out cold for about an hour...*
+
+'
+  - '*When he wakes up, he finds his wallet on his left arm with a note...*'
+  - 'Note: Yo here''s your wallet back. The name is Kenny. I was supposed to be your
+    Beer Pong oppenent but Gallus knocked you out cold before we actually play.'
+  - WALLET RETRIEVED. PROCEED TO NEXT EVENT
+  responses: []

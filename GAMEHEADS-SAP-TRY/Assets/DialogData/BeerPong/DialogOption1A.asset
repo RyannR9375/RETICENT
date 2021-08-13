@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: DialogOption1A
+  m_EditorClassIdentifier: 
+  dialog:
+  - 'LAQUAN: Please dude, I need my...my wallet. Gimme it and you''ll never see me
+    again. (Desperate Choice)'
+  - 'GALLUS E.: Bro! Grow the fuck up! I don''t wanna hear anymore bullshit from
+    someone that can''t even handle a damn L! Disappointing, just disappointing.'
+  - '*WALLET LOST. YOU''LL GET EM NEXT TIME AKA IN THE NEXT EVENT: THE KITCHEN*
+
+    Scolded
+    -10 PTs'
+  - "\rLaquan's Reflection: Mannnn how did I screw that up? I was so close to getting
+    it and now I'm nearly all drained...Oh well I heard the winner of the beer pong
+    match I lost went to the kitchen. Maybe I have another chance to get it back."
+  responses:
+  - responseText: NEXT
+    dialogObject: {fileID: 0}

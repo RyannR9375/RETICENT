@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: Dialog1B
+  m_EditorClassIdentifier: 
+  dialog:
+  - 'LAQUAN: How about you just give me my wallet?(Confrontation Choice) -5 PTs'
+  - 'GALLUS E. (Beer Pong Host): Ohhhhh you asked for it, dipshit!'
+  - 'LAQUAN gets socked in the eye but is conscious enough to barely get back up
+    and watch as Gallus E. hands off his wallet to the default winner of match he
+    was supposed to play -10 PTs
+
+    BlACK EYE -10 PTs
+
+    HEADACHE -10 PTs'
+  - '*WALLET LOST. HEAD TO KITCHEN FOR FUTURE RETRIEVAL*'
+  - 'LAQUAN''S REFLECTION: Fuckkkk...If anything I manage to make myself even madder
+    than before! Ugh I''m so drained with this black eye and everything. Whatever.
+    I guess I gotta head to kitchen to catch up with the winner.'
+  responses:
+  - responseText: NEXT
+    dialogObject: {fileID: 0}

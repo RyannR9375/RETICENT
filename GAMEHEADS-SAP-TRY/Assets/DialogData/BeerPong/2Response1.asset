@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: 2Response1
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained for coming up with a lie.
+  - 'Gallus E: Bro cmon, please play! It''s my first time hosting a Beer Pong game
+    and there''s like only two people here.'
+  responses:
+  - responseText: 'A) Laquan: Could I get your wallet if I do play? '
+    dialogObject: {fileID: 11400000, guid: 9c48379e854f5b34591c32f68b7f94fb, type: 2}
+  - responseText: 'B) Laquan: What will you owe me if I play?'
+    dialogObject: {fileID: 11400000, guid: 9b189da6d2aaa1b42b90ef38b154847f, type: 2}
