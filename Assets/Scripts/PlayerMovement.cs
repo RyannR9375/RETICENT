@@ -81,6 +81,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Heal()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+    }
+
     //COLLISION CHECK
     private void OnTriggerEnter2D(Collider2D collision)
     {
