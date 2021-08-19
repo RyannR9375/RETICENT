@@ -44,10 +44,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (dialogUI.IsOpen) return;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Got");
+        }
+        
+        if (!dialogUI.IsOpen)
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
 
         //rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        
 
         if (Input.GetKeyDown(KeyCode.E)) // INTERACTABLE
         {

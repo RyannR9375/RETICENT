@@ -14,6 +14,7 @@ public class HintSystem : MonoBehaviour
     public void UnSetup()
     {
         gameObject.SetActive(false);
+        DestroyImmediate(this);
     }
 
     public bool isPaused = false;

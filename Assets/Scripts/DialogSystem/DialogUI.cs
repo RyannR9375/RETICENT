@@ -47,7 +47,7 @@ public class DialogUI : MonoBehaviour
             if(i == dialogObject.Dialog.Length - 1 && dialogObject.HasResponses) break; //checks if the text is done typing to be able to show or activate responses
 
             yield return null;
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space)); // Waits till u press space bar to continue the dialog
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E)); // Waits till u press space bar to continue the dialog
         }
 
         if (dialogObject.HasResponses)

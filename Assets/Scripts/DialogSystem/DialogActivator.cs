@@ -32,10 +32,11 @@ public class DialogActivator : MonoBehaviour, IInteractable
             if(player.Interactable is DialogActivator dialogActivator && dialogActivator == this)
             {
                 player.Interactable = null; // in the case that there r multiple activated, it makes sure that its null if its sure that its the current interactable
+                EButton.SetActive(false);
             }
         }
 
-        EButton.SetActive(false);
+        
     }
 
     public void Interact(PlayerMovement player)
@@ -50,6 +51,10 @@ public class DialogActivator : MonoBehaviour, IInteractable
         }
 
 
-        player.DialogUI.ShowDialog(dialogObject);
+       if(player.DialogUI.IsOpen == false)
+        {
+            player.DialogUI.ShowDialog(dialogObject);
+        }
+            
     }
 }

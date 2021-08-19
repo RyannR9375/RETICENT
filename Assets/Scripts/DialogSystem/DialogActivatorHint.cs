@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-public class DialogActivatorHint : MonoBehaviour, IInteractable
+public class DialogActivatorHint : MonoBehaviour//, IInteractable
 {
-    [SerializeField] private DialogObject dialogObject;
+    //[SerializeField] private DialogObject dialogObject;
     
     public GameObject EButton;
     public GameObject Hint;
 
     public void UpdateDialogObject(DialogObject dialogObject)
     {
-        this.dialogObject = dialogObject;
+       // this.dialogObject = dialogObject;
     }
 
     public bool isPaused = false;
@@ -23,7 +23,7 @@ public class DialogActivatorHint : MonoBehaviour, IInteractable
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player)) //checks for player tag and component
         {
-            player.Interactable = this;
+            //player.Interactable = this;
             EButton.SetActive(true);
 
             SwitchPause();
@@ -36,6 +36,12 @@ public class DialogActivatorHint : MonoBehaviour, IInteractable
             }
 
         } 
+    }
+
+    public void UnSetup()
+    {
+        gameObject.SetActive(false);
+        DestroyImmediate(this);
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -51,18 +57,18 @@ public class DialogActivatorHint : MonoBehaviour, IInteractable
         EButton.SetActive(false);
     }
 
-    public void Interact(PlayerMovement player)
-    {
-        foreach(DialogResponseEvents responseEvents in GetComponents<DialogResponseEvents>())
-        {
-            if(responseEvents.DialogObject == dialogObject)
-            {
-                player.DialogUI.AddResponseEvents(responseEvents.Events);
-                break;
-            }
-        }
+    //public void Interact(PlayerMovement player)
+   // {
+      //  foreach(DialogResponseEvents responseEvents in GetComponents<DialogResponseEvents>())
+      //  {
+         //   if(responseEvents.DialogObject == dialogObject)
+          //  {
+           //     player.DialogUI.AddResponseEvents(responseEvents.Events);
+          //      break;
+           // }
+     //   }
 
 
-        player.DialogUI.ShowDialog(dialogObject);
-    }
+     //   player.DialogUI.ShowDialog(dialogObject);
+  //  }
 }
