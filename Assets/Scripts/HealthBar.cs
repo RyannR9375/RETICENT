@@ -6,6 +6,11 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
 
+    public float GetHealthNormalized()
+    {
+        return ((float)slider.value - slider.minValue) / (slider.maxValue - slider.minValue);
+    }
+
     public Slider slider;
     public Gradient gradient;
     public Image fill;

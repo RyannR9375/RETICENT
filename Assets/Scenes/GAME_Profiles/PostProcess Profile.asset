@@ -17,17 +17,17 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
     overrideState: 1
-    value: {r: 0.030081892, g: 0.11805433, b: 0.49056602, a: 0.50980395}
+    value: {r: 0.014017452, g: 0.06908602, b: 0.4245283, a: 1}
   center:
     overrideState: 1
-    value: {x: 0.5, y: 0.25}
+    value: {x: 0.5, y: 0.3}
   intensity:
     overrideState: 1
-    value: 0.64
+    value: 1
   smoothness:
     overrideState: 1
     value: 1
@@ -38,8 +38,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   mask:
-    overrideState: 0
-    value: {fileID: 0}
+    overrideState: 1
+    value: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     defaultState: 1
   opacity:
     overrideState: 0

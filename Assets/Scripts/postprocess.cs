@@ -7,6 +7,10 @@ public class postprocess : MonoBehaviour
 {
 
     public PostProcessVolume postprocessvolume;
+    public HealthBar healthbar;
+
+    public float intensityMin = 0.6f;
+    public float intensityMax = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +22,8 @@ public class postprocess : MonoBehaviour
     void Update()
     {
         {
-            postprocessvolume.weight = Mathf.Sin(Time.time) * 0.5f + 0.5f;
+            //postprocessvolume.weight = Mathf.Sin(Time.time) * 0.5f + 0.5f;
+            postprocessvolume.weight = (1 - healthbar.GetHealthNormalized()) * (intensityMax - intensityMin) + intensityMin;
         }
     }
 }
