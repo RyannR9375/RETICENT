@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: B_Response_B_A_A
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained because the uncertainty of your answer is killing you.
+  - 'Bird 1: You are correct! Proceed to the couch.'
+  - '*Laquan searches the cushion of the couch only to find...*'
+  - '*Nothing at all*'
+  - You definitely feel drained because all of this was for nothing.
+  - 'Laquan''s Thoughts: Ah fuck there was nothing there?! I definitely feel as though
+    there was better way to do this. I guess I''ll have to be more attentive next
+    time.'
+  - NO ITEM RETRIEVED. CONTINUE TO THE NEXT EVENT.
+  responses: []

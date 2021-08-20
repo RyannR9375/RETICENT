@@ -11,13 +11,16 @@ public class Collectable : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Collected(); 
+            Collected();
         }
     }
+
+
 
     protected virtual void Collected()
     {
         //override
         Destroy(this.gameObject);
     }
+    
 }

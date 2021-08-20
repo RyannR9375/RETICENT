@@ -44,10 +44,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("Got");
-        }
         
         if (!dialogUI.IsOpen)
         {

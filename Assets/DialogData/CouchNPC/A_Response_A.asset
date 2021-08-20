@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: A_Response_A
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained because you feel like you're being too nice to these assholes.
+  - 'Bird 2: Argh do it quick then. The newest episode starts at 8 PM!'
+  - '*Laquan searches the cushion of the couch and finds...*'
+  - "\r*Sees Nothing*"
+  - You definitely feel drained because all of this was for nothing.
+  - 'Laquan''s Thoughts: Damnn this is embarrassing and I''m tired but I''m sick
+    of just letting these fuckers yell at me for every little thing I do. What should
+    I do? Cut my losses and apologize (Choice A) or Be honest with my feelings (Choice
+    B)?'
+  responses:
+  - responseText: 'A) Laquan: Look man, my bad. I just thought that my stuff was
+      here'
+    dialogObject: {fileID: 11400000, guid: d80e4964da484af4cb9bd22636c11abe, type: 2}
+  - responseText: 'B) Laquan: Bro fuck off'
+    dialogObject: {fileID: 11400000, guid: 73b687f7dedb46a4e8083e6f9288e487, type: 2}

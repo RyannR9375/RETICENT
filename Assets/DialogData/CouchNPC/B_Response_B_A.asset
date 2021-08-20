@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: B_Response_B_A
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained because this conversation was longer than expected.
+  - 'Bird 3: You just seem to carry the distict tang of a traitor. That''s all'
+  - 'Bird 1: Here let''s put this to the test. Answer this! When did That''s So Damon
+    first air it''s first episode?'
+  responses:
+  - responseText: A) 2014?
+    dialogObject: {fileID: 11400000, guid: b7d5a6fe8945769418cd067fa82e02bd, type: 2}
+  - responseText: B) 2020.
+    dialogObject: {fileID: 11400000, guid: c9884fa9a95265447ac51765e1815494, type: 2}

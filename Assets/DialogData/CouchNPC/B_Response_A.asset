@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: B_Response_A
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained because you were straight to the point.
+  - '*Everybody suddenly gets quiet. All three of the birds look at each other with
+    fear in their eyes*'
+  - 'Bird 3: Well(Gulp)...I guess we wouldn''t mind having you take a look.'
+  - '*Finds Absolutely Nothing*'
+  - You definitely feel drained because you feel this was all for nothing.
+  - 'Bird 2: Oh bro...It''s all good. Cheer up! I hope you find your item somehwere
+    along the way.'
+  - 'Laquan''s Thoughts: Man not gonna lie, I do feel a bit bummed out, but at least
+    these birds were pretty chill. I don''t see how this would of gone any better.
+    Good job me!'
+  - NO ITEM RETRIEVED. CONTINUE TO THE NEXT EVENT.
+  responses: []

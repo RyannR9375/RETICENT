@@ -10,6 +10,39 @@ public class GameManager : MonoBehaviour
 
     public bool isPaused = false;
 
+    private int CollectedItems, victoryCondition = 2;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            DestroyImmediate(this);
+        }
+    }
+
+    private static GameManager instance;
+
+    public static GameManager MyInstance
+    {
+        get
+        {
+            if (instance == null)
+                instance = new GameManager();
+
+            return instance;
+        }
+    }
+
+    public void AddItems(int _items)
+    {
+        CollectedItems += _items;
+        UIManager.MyInstance.UpdateItemUI(CollectedItems, victoryCondition);
+    }
+
     public void SwitchPause()
     {
         if (GameOverYesNo == false)
@@ -26,8 +59,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        Player.GetComponent<SpriteRenderer>().sprite = playersprite;
+        UIManager.MyInstance.UpdateItemUI(CollectedItems, victoryCondition);
     }
 
     // Update is called once per frame

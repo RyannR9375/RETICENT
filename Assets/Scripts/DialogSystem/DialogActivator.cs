@@ -18,7 +18,7 @@ public class DialogActivator : MonoBehaviour, IInteractable
             player.Interactable = this;
             EButton.SetActive(true);
 
-            if(Input.GetKeyDown("E"))
+            if(Input.GetKeyDown(KeyCode.E))
             {
                 EButton.SetActive(false);
             }
