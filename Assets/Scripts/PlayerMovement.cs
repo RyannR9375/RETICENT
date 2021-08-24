@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
     public DialogUI DialogUI => dialogUI;
 
+    public GameOverScreen GameOverScreen;
+
     public IInteractable Interactable { get; set; }
 
     public HealthBar healthBar;
@@ -73,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         if (currentHealth <= 0)
         {
             //playerAnim.SetTrigger("Die");
-            //GameOver();
+            GameOver();
         }
     }
 
@@ -94,11 +96,19 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void TakeDamage(int damage)
+    public bool isPaused = false;
+    public void SwitchPauseDeath()
     {
-        currentHealth -= damage;
+        Time.timeScale = Time.timeScale == 1 ? 0 : 1;
+        isPaused = isPaused = true ? false : true;
+    }
 
-        healthBar.SetHealth(currentHealth);
+    public bool GameOverYesNo;
+    public void GameOver()
+    {
+        GameOverYesNo = true;
+        SwitchPauseDeath();
+        GameOverScreen.Setup();
     }
 
 }
