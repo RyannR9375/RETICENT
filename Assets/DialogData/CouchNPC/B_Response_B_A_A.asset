@@ -22,4 +22,8 @@ MonoBehaviour:
     there was better way to do this. I guess I''ll have to be more attentive next
     time.'
   - NO ITEM RETRIEVED. CONTINUE TO THE NEXT EVENT.
-  responses: []
+  responses:
+  - responseText: NEXT
+    dialogObject: {fileID: 0}
+  - responseText: NEXT
+    dialogObject: {fileID: 0}

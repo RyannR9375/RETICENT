@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: M_Response
+  m_EditorClassIdentifier: 
+  dialog:
+  - 'Hint: Wait is that my GREEN key he''s using. It could be his, but WHO USES A
+    KEY TO OPEN THE LID OF A CAN????'
+  - '*Laquan quickly rushes to the scene*'
+  - 'Kitchen King: Woah woah slow down there! You''re gonna ruin the smoothie!'
+  - 'Laquan: Oh, sorry bout that.'
+  - 'Kitchen King: Eww don''t be sorry, be better! Why are you here? Are you a spy?!'
+  - 'Laquan''s Thoughts: Woah this is getting out of hand. He''s just spewing whatever
+    shit comes from the top of his head. Maybe in order to get my keys back ASAP,
+    I should entertain his accusation (Choice A) or just not give a fuck (Choice
+    B).'
+  responses:
+  - responseText: 'A)Laquan: A Spy? Like in the movies??'
+    dialogObject: {fileID: 11400000, guid: b5a5aacd563af074b9eb7a6f551ef58b, type: 2}
+  - responseText: 'B) Laquan: Nah fam.'
+    dialogObject: {fileID: 11400000, guid: bd883e1ec50fdc64f9286ffc7b49b487, type: 2}

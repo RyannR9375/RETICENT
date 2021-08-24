@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: A_Response
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained for being accused of an obvious lie.
+  - 'Kitchen King: Don''t play dumb! You''re a filthy rat who''s out to steal my
+    shake recipe!'
+  - 'Laquan''s Thoughts: Alright he''s paranoid as fuck. I either have to clarify
+    the situation (Option A) or cut to the point (Choice B).'
+  responses:
+  - responseText: 'A) Laquan: I can explain...'
+    dialogObject: {fileID: 11400000, guid: 36661140d181b594fa27976f8003b9c5, type: 2}
+  - responseText: 'B) Laquan: One of your guys has my keys!'
+    dialogObject: {fileID: 11400000, guid: d5a1b822b98a28c4cb37245e2b813fd9, type: 2}

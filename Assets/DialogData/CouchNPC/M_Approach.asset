@@ -16,9 +16,9 @@ MonoBehaviour:
   - '*Laquan approaches the people watching a show on the couch*'
   - 'Laquan''s Thoughts: That can''t be...'
   - 'Laquan: Is that That''s So Damon???'
-  - 'Bird 1: Bruh did you just say That''s So Damon?'
-  - 'Laquan''s Thoughts: Ah shit shit shit! I have to get them to like me. Should
-    I come off as a That''s So Damon Stan (Choice A) or not (Choice B)?'
+  - 'Bird 1: Bruh did you REALLY just say That''s So Damon?'
+  - 'Laquan''s Thoughts: Ah shit! I like this show, but do they fuck with it? Should
+    I be true with myself (Choice A) or not (Choice B)?'
   responses:
   - responseText: A) Yeah for sure.
     dialogObject: {fileID: 11400000, guid: 618bf53ed2b409440a1e6eb69f94d98e, type: 2}

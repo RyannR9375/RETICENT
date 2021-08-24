@@ -18,6 +18,7 @@ MonoBehaviour:
   - '*Laquan searches the cushion of the couch and finds...*'
   - "\r*Sees Nothing*"
   - You definitely feel drained because all of this was for nothing.
+  - 'Bird 1: Bro wtf! Is this a joke? You wasted everyone''s time and found nothing???'
   - 'Laquan''s Thoughts: Damnn this is embarrassing and I''m tired but I''m sick
     of just letting these fuckers yell at me for every little thing I do. What should
     I do? Cut my losses and apologize (Choice A) or Be honest with my feelings (Choice
@@ -27,4 +28,4 @@ MonoBehaviour:
       here'
     dialogObject: {fileID: 11400000, guid: d80e4964da484af4cb9bd22636c11abe, type: 2}
   - responseText: 'B) Laquan: Bro fuck off'
-    dialogObject: {fileID: 11400000, guid: 73b687f7dedb46a4e8083e6f9288e487, type: 2}
+    dialogObject: {fileID: 11400000, guid: 029efe55b3584654fa1c51cb7a5ade2b, type: 2}

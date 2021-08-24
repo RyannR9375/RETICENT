@@ -16,10 +16,10 @@ MonoBehaviour:
   - You feel drained for pretending to be confident with your choice.
   - 'Bird 2: Bruh you definitely high. Only a mad man would confuse Jose in the House
     with fucking That''s So Damon.'
-  - 'Laquan''s Thoughts: These guys are such as assholes! Like I get that you''re
-    really enthusiastic about your craft, but damn lighten the fuck up! That being
-    said I don''t think they''re not budging. What should I do? Should I sound more
-    compassionate (Choice A) or direct as possible (Choice B)'
+  - 'Laquan''s Thoughts: These guys are such assholes! Like I get that you really
+    like your show, but damn lighten the fuck up! That being said I don''t think
+    they''re budging. What should I do? Should I sound more compassionate (Choice
+    A) or direct as possible (Choice B)?'
   responses:
   - responseText: A) Okay my bad, but I need to check your couch real quick.
     dialogObject: {fileID: 11400000, guid: fe494fc4b83ec0c46b8d21f6d506ec7d, type: 2}

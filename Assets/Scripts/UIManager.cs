@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI txtItems, txtVictoryCondition;
     [SerializeField] GameObject victoryCondition;
+    [SerializeField] TextMeshProUGUI txtHealTimes;
 
     private void Awake()
     {
@@ -36,7 +37,12 @@ public class UIManager : MonoBehaviour
 
     public void UpdateItemUI(int _items, int _victoryCondition)
     {
-        txtItems.text = "Items Collected: " + _items + "/ " + _victoryCondition;
+        txtItems.text = "Items Collected: " + _items + "/" + _victoryCondition;
+    }
+
+    public void UpdateHealTimesUI(int _times)
+    {
+        txtHealTimes.text = "You are allowed to heal " + _times + " more times.";
     }
 
     public void ShowVictoryCondition(int _items, int _victoryCondition)

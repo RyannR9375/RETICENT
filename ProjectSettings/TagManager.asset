@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Dialog
+  - Wallet
+  - Phone
+  - Key
   layers:
   - Default
   - TransparentFX

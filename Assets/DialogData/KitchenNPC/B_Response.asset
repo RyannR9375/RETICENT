@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25ba4d7e5b6ab84184ea31c8c142fdb, type: 3}
+  m_Name: B_Response
+  m_EditorClassIdentifier: 
+  dialog:
+  - You feel drained for your lackluster response.
+  - 'Kitchen King: Oh really? Well I don''t trust the likes of you. However there
+    is a way to gain my trust...SHAKE SHOWDOWN!'
+  - 'Laquan''s Thoughts: This guy has to be kidding right? He first accuses me of
+    being a spy and now he wants to do a shake contest? I either stand my ground
+    (Choice A) or join in to win his favor (Choice B)'
+  responses:
+  - responseText: 'A) Laquan: Nah I''m good. I just want my keys back.'
+    dialogObject: {fileID: 11400000, guid: 63894518eb873c645a19ac317aac9b5d, type: 2}
+  - responseText: 'B) Laquan: Aight bet'
+    dialogObject: {fileID: 11400000, guid: 2268f1f71f7f0374bb2ae84105531484, type: 2}

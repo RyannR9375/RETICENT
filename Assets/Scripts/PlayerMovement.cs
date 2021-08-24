@@ -7,12 +7,19 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private DialogUI dialogUI;
 
+    [SerializeField] GameObject itemWallet;
+    [SerializeField] GameObject itemKey;
+    [SerializeField] GameObject itemPhone;
+
     public int maxHealth = 8;
     public int currentHealth;
+    public Rigidbody2D SpawnPoint;
     public DialogUI DialogUI => dialogUI;
 
     public IInteractable Interactable { get; set; }
 
+    public int HealTimes = 3;
+    public bool canHeal;
     public HealthBar healthBar;
 
     public float moveSpeed = 3f;
@@ -44,21 +51,42 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+
         if (!dialogUI.IsOpen)
         {
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
 
         //rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
-        
+
 
         if (Input.GetKeyDown(KeyCode.E)) // INTERACTABLE
         {
-            if(Interactable != null)
+            if (Interactable != null)
             {
                 Interactable.Interact(this);
             }
+        }
+
+
+    }
+
+    //COLLISION CHECK
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Wallet")
+        {
+            itemWallet.SetActive(true);
+        }
+
+        if (collision.tag == "Key")
+        {
+            itemKey.SetActive(true);
+        }
+
+        if (collision.tag == "Phone")
+        {
+            itemPhone.SetActive(true);
         }
     }
 
@@ -73,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         if (currentHealth <= 0)
         {
             //playerAnim.SetTrigger("Die");
-            //GameOver();
+            GameOver();
         }
     }
 
@@ -84,21 +112,33 @@ public class PlayerMovement : MonoBehaviour
     }
 
     //COLLISION CHECK
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
 
-        if (collision.tag == "Enemy")
-        {
-            SceneManager.LoadScene("DEMO");
-        }
+    //if (collision.tag == "Enemy")
+    //{
+    //  SceneManager.LoadScene("DEMO");
+    // }
 
-    }
+    //}
 
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    public bool GameOverYesNo;
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GAME OVER");
+    }
+
+    public void MoveSpawn()
+    {
+        rb.MovePosition(SpawnPoint.position);
+        Debug.Log("Moved");
     }
 
 }

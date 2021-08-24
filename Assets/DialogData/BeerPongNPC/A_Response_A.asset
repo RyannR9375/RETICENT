@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Response_A
   m_EditorClassIdentifier: 
   dialog:
-  - You feel because you had to beg in public.
+  - You feel drained because you had to beg in public.
   - 'Gallus E: Omg bro. Here just take the wallet if you''re gonna cry about it.
     Sheesh what a wuss.'
   - You feel drained because everyone now sees you as a cry baby.

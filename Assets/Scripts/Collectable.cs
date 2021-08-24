@@ -15,12 +15,22 @@ public class Collectable : MonoBehaviour
         }
     }
 
-
-
     protected virtual void Collected()
     {
         //override
         Destroy(this.gameObject);
     }
-    
+
+    protected virtual void CollectedKeys()
+    {
+        //override
+        Destroy(this.gameObject);
+    }
+
+    protected virtual void CollectedPhone()
+    {
+        //override
+        Destroy(this.gameObject);
+    }
+
 }
