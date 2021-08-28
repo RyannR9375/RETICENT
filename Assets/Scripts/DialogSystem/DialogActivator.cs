@@ -13,12 +13,13 @@ public class DialogActivator : MonoBehaviour, IInteractable
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player)) //checks for player tag and component
         {
             player.Interactable = this;
             EButton.SetActive(true);
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || (Input.GetKeyDown(KeyCode.JoystickButton16)))
             {
                 EButton.SetActive(false);
             }
